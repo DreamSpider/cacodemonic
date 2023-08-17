@@ -1,0 +1,18 @@
+words = {
+    "heavenly": 92,
+    "divine": 63,
+    "radiant": 67,
+    "majestic": 80,
+    "powerful": 116,
+    "wise": 56,
+    "virtuous": 124,
+    "pure": 60,
+    "benevolent": 114,
+    "graceful": 78,
+    "glowing": 87,
+    "holy": 60
+}
+
+with open("angelic_words.txt", "w") as file:
+    for word, number in words.items():
+        file.write(f"{word}: {number}\n")
